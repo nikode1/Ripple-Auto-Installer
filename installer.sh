@@ -98,7 +98,9 @@ askPrerequisites(){
 install-dependencies(){	
 	echo "Installing Dependencies..."
 	
-	apt-get update
+	sudo apt-get update && sudo apt-get upgrade -y
+        sudo apt-get update
+	apt-get -qq update && apt-get -qq dist-upgrade
 	## SOME UPDATES FOR GCP VPSES OR ANY OTHER VPS PROVIDERS
 	sudo apt-get install \
 		build-essential \
