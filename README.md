@@ -10,7 +10,7 @@ Uniminin's Auto Ripple OSU! Server Installer!
 This Script installs most of the things for server! If you want to use custom modify, You need to edit it yourself. Please Star and Fork it if you use it! (THIS IS NOT DESIGNED FOR WINDOWS OR FOR LOCAL PC!) This is designed to be used on VPS.
 
 # Requirements
-* Any VPS with Ubuntu OS!
+* Any VPS with Ubuntu OS is strongly recommended
 
 # Features
 * A configurable shell script for installing most of the things for your clone Ripple server
