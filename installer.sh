@@ -1,6 +1,6 @@
 #!/bin/bash
 clear
-# THIS SCRIPT IS ORIGINALLY FROM UNIMININ #
+# THIS SCRIPT IS ORIGINALLY FROM UNIMININ # 
 printf "This script has to run in sudo mode.\nIf this isn't the case CTRL+C now.\nAlso please don't Install this in /root/ but whatever if you want you can anyways, I've tried it and it works.\nThis is also meant to be used on a fresh Ubuntu 16.04 OS but you can use any other ubuntu OS anyways, because this creates a new database and etc stuffs.\nThis Installer is Simplistic as its just something I and my Team put together so we or you could easily recreate the server once things change or when we move server around for testing and etc stuffs.\n\t- Uniminin\n"
 
 [ $(id -u) -ne 0 ] && { echo "Needs to be run with sudo!" ; exit ; }
