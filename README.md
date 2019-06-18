@@ -51,8 +51,12 @@ Make sure you set your DNS like this:
 
 | NO | Status| Platform|
 |----|-------|---------|
-|1|[![](https://neilpang.github.io/acmetest/status/ubuntu-latest.svg)](https://github.com/uniminin)| Ubuntu
-|2|[![](https://neilpang.github.io/acmetest/status/kalilinux-kali-linux-docker.svg)](https://github.com/uniminin)|Kali Linux
+|1|[![](https://imgur.com/3HyLK17)](https://github.com/uniminin)| Ubuntu
+|2|[![](https://neilpang.github.io/acmetest/status/ubuntu-latest.svg)](https://github.com/uniminin)| Pop!OS
+|3|[![](https://neilpang.github.io/acmetest/status/ubuntu-latest.svg)](https://github.com/uniminin)| Kubuntu
+|4|[![](https://neilpang.github.io/acmetest/status/kalilinux-kali-linux-docker.svg)](https://github.com/uniminin)|Kali Linux
+|5|[![](https://neilpang.github.io/acmetest/status/kalilinux-kali-linux-docker.svg)](https://github.com/uniminin)|Mint 19
+|6|[![](https://neilpang.github.io/acmetest/status/kalilinux-kali-linux-docker.svg)](https://github.com/uniminin)|OpenSuse
 
 # Need Help?
 You can ask for any kinds of help regarding this project via Discord DMs or through Github Issues.<br>
