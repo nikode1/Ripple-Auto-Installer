@@ -17,12 +17,13 @@ This Script installs most of the things for server! If you want to use other stu
 * Ripple Based
 * Everything is Pre-ready and is getting via wget
 * Simple and user friendly Installation
+* Installs the most of the things for your server within about 10-15 Minutes
 
 # Installation Instructions
 
 ### Step 1:
 
-First of all you need to download it by either downloading it from GitHub, or running this command to download: 
+First of all you need to download it by either by downloading it from GitHub, or running this command to download: 
 
 ```bash
 wget https://raw.githubusercontent.com/Uniminin/Ripple-Auto-Installer/master/installer.sh
@@ -51,12 +52,12 @@ Make sure you set your DNS like this:
 
 | NO | Status| Platform|
 |----|-------|---------|
-|1|[![](https://github.com/Uniminin/Ripple-Auto-Installer/blob/master/fail.svg)](https://github.com/uniminin)| Ubuntu
-|2|[![](https://neilpang.github.io/acmetest/status/ubuntu-latest.svg)](https://github.com/uniminin)| Pop!OS
-|3|[![](https://neilpang.github.io/acmetest/status/ubuntu-latest.svg)](https://github.com/uniminin)| Kubuntu
-|4|[![](https://neilpang.github.io/acmetest/status/kalilinux-kali-linux-docker.svg)](https://github.com/uniminin)|Kali Linux
-|5|[![](https://neilpang.github.io/acmetest/status/kalilinux-kali-linux-docker.svg)](https://github.com/uniminin)|Mint 19
-|6|[![](https://neilpang.github.io/acmetest/status/kalilinux-kali-linux-docker.svg)](https://github.com/uniminin)|OpenSuse
+|1|[![](https://github.com/Uniminin/Ripple-Auto-Installer/blob/master/pass.svg)](https://github.com/uniminin)| Ubuntu
+|2|[![](https://github.com/Uniminin/Ripple-Auto-Installer/blob/master/pass.svg)](https://github.com/uniminin)| Pop!OS
+|3|[![](https://github.com/Uniminin/Ripple-Auto-Installer/blob/master/pass.svg)](https://github.com/uniminin)| Kubuntu
+|4|[![](https://github.com/Uniminin/Ripple-Auto-Installer/blob/master/fail.svg)](https://github.com/uniminin)| Kali Linux
+|5|[![](https://github.com/Uniminin/Ripple-Auto-Installer/blob/master/fail.svg)](https://github.com/uniminin)| Mint 19
+|6|[![](https://github.com/Uniminin/Ripple-Auto-Installer/blob/master/fail.svg)](https://github.com/uniminin)| OpenSuse
 
 # Need Help?
 You can ask for any kinds of help regarding this project via Discord DMs or through Github Issues.<br>
