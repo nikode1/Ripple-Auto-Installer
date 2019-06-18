@@ -3,7 +3,7 @@
 Uniminin's Auto Ripple OSU! Server Installer!
 
 <p align="center">
-  <img src="https://ripple.moe/static/logos/logo-pink.svg"/>
+  <img src="https://github.com/Uniminin/Ripple-Auto-Installer/blob/master/ripple.svg"/>
 </p>
 
 # Important Note
