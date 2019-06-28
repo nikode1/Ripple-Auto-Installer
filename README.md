@@ -76,6 +76,7 @@ You can ask for any kinds of help regarding this project via Discord DMs or thro
 * <a href=https://github.com/osufx>osu!fx</a> - Thanks for the secret module!
 * <a href=https://github.com/osuYozora>osu!Yozora</a> - Thanks for the past!
 * <a href=https://github.com/EmilySunpy>Sunpy</a> - Thanks for most of the commands and dependencies!
+* <a href=https://github.com/rumoi>rumoi</a> - Thanks for the Support!
 
 # License [![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0) [![License: ODbL](https://img.shields.io/badge/License-ODbL-brightgreen.svg)](https://opendatacommons.org/licenses/odbl/)
 This installer falls under the GNU Affero General Public License V3. For more information, see the file `LICENSE` or visit https://www.gnu.org/licenses/agpl-3.0.
