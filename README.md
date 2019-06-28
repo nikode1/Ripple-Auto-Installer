@@ -20,6 +20,7 @@ This Script installs most of the things for server! If you want to use other stu
 * Installs the most of the things for your server within about 10-15 Minutes
 
 # Installation Instructions
+* Note: There are more than 1 installer from different persons, re-edited! You can use any of them you want, or just by a bit modifying yourself. Get those installers via `wget` (raw). And rename it to installer, then follow Step 2. You can also do `sudo sh installer.sh`
 
 ### Step 1:
 
