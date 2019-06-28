@@ -40,6 +40,10 @@ chmod +x installer.sh && ./installer.sh
 
 You `don't have to be root` then, although `it is recommended`.
 
+### Step 3:
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Test-Logo.svg/1280px-Test-Logo.svg.png"/>
+
+
 Make sure you set your DNS like this:
 Note: You can also replace `YOUR-DOMAIN` with your VPS/SSH IP!
 
