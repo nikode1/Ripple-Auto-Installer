@@ -70,6 +70,7 @@ You can ask for any kinds of help regarding this project via Discord DMs or thro
 * <a href=https://github.com/Uniminin>Uniminin</a> - Aoba's Successor.
 * <a href=https://github.com/Ozymandias42>Ozymandias42</a> - Thank You so much for rearranging and styling everything. You're the best <3.
 * <a href=https://github.com/LilPietrek>LilPietrek</a> - Thanks for your time for managing and supporting my shell project.
+* <a href=https://github.com/FIREFOXCYBER>! FoXy !</a> - Thanks for endless support and solve all the problems.
 * <a href=https://github.com/Hazuki-san>Aoba Suzukaze</a> - Thanks you for your ripple auto installer project. Really helped me a lot.
 * <a href=https://github.com/ppy>peppy</a> - Thank you for the wonderful game.
 * <a href=https://github.com/osuripple>Ripple</a> - Thank you for your private server.
