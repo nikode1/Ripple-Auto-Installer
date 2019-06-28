@@ -40,8 +40,8 @@ chmod +x installer.sh && ./installer.sh
 
 You `don't have to be root` then, although `it is recommended`.
 
-### Step 3:
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Test-Logo.svg/1280px-Test-Logo.svg.png"/>
+### Step 3: Follow These Steps To Start The Server!
+<img src="https://github.com/Uniminin/Ripple-Auto-Installer/blob/master/start.png"/>
 
 
 Make sure you set your DNS like this:
