@@ -412,6 +412,7 @@ DIFF=$(( $END - $START ))
 	   ##
 
 #Starting nginx
+pkill -f nginx
 nginx
 
 #End notes and installer feedback
