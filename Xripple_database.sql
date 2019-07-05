@@ -16,9 +16,9 @@ SET time_zone = "+00:00";
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
 /*!40101 SET NAMES utf8mb4 */;
 
---
--- Database: `ripple`
---
+-- Dumping database structure for ripple
+CREATE DATABASE IF NOT EXISTS `ripple` /*!40100 DEFAULT CHARACTER SET latin1 */;
+USE `ripple`;
 
 -- --------------------------------------------------------
 
@@ -640,6 +640,18 @@ CREATE TABLE `rank_requests` (
   `time` int(11) NOT NULL,
   `blacklisted` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+-- Dumping structure for table ripple.rap_logs
+CREATE TABLE IF NOT EXISTS `rap_logs` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `userid` int(10) NOT NULL,
+  `text` longtext NOT NULL,
+  `datetime` int(30) NOT NULL,
+  `through` text NOT NULL,
+  KEY `id` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
