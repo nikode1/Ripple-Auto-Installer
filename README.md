@@ -54,6 +54,21 @@ Note: You can also replace `YOUR-DOMAIN` with your VPS/SSH IP!
 * s.YOUR-DOMAIN
 * old.YOUR-DOMAIN
 
+# Removal Process
+Copy-Paste the following commands in the terminal to remove all dependencies installed including ripple server.
+
+### Step 1:
+
+```bash
+wget https://raw.githubusercontent.com/Uniminin/Ripple-Auto-Installer/master/uninstaller.sh
+```
+
+### Step 2:
+
+```bash
+chmod +x uninstaller.sh && ./uninstaller.sh
+```
+
 # Tested OS
 
 | NO | Status| Platform|
