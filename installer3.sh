@@ -257,7 +257,6 @@ nginx
 echo "Setup is done"
 echo "PhpMyAdmin can be accessed here: http://old.$domain/phpmyadmin"
 
-fi
 
 }
 
