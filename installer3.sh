@@ -126,7 +126,6 @@ sed -i 's#root#'$mysql_usr'#g; s#changeme#'$peppy_cikey'#g'; s#http://.../letsap
 sed -E -i -e 'H;1h;$!d;x' config.ini -e 's#password = #password = '$mysql_psw'#'
 cd $MasterDir
 
-
 git clone https://github.com/osuripple/lets
 cd lets
 python3.6 -m pip install -r requirements.txt
@@ -162,9 +161,7 @@ wget -O config.py https://pastebin.com/raw/E0zUvLuU
 sed -i 's#root#'$mysql_usr'#g; s#mysqlpsw#'$mysql_psw'#g; s#DOMAIN#'$domain'#g; s#changeme#'$peppy_cikey'#g; s#YOUR_OSU_API_KEY_HERE#'$lets_osuapikey'#g; s#http://cheesegu.ll/api#'https://cg.mxr.lol/api'#g' config.py
 cd $MasterDir
 echo "LETS Server setup is done!"
-
 apt-get install redis-server -y
-
 mkdir nginx
 cd nginx
 systemctl restart php7.0-fpm
@@ -185,11 +182,9 @@ wget -O key.pem https://raw.githubusercontent.com/osuthailand/ainu-certificate/m
 echo "Certificate downloaded!"
 nginx
 cd $MasterDir
-
 wget -O ripple.sql https://raw.githubusercontent.com/Uniminin/AOBAS-LATEST-RIPPLE-INSTALLER/master/ripple_database.sql
 mysql -u "$mysql_usr" -p"$mysql_psw" -e 'CREATE DATABASE ripple;'
 mysql -u "$mysql_usr" -p"$mysql_psw" ripple < ripple.sql
-
 mkdir hanayo
 cd hanayo
 go get -u https://github.com/osuripple/hanayo
@@ -206,8 +201,6 @@ sed -E -i -e 'H;1h;$!d;x' hanayo.conf -e 's#DSN=#DSN='$mysql_usr':'$mysql_psw'@/
 sed -E -i -e 'H;1h;$!d;x' hanayo.conf -e 's#API=#API=http://localhost:40001/api/v1/#'
 cd $MasterDir
 
-
-
 mkdir rippleapi
 cd rippleapi
 go get -u zxq.co/ripple/rippleapi
@@ -218,8 +211,6 @@ mv /root/go/bin/rippleapi ./
 ./rippleapi
 sed -i 's#root@#'$mysql_usr':'$mysql_psw'@#g; s#Potato#'$hanayo_apisecret'#g; s#OsuAPIKey=#OsuAPIKey='$peppy_cikey'#g' api.conf
 cd $MasterDir
-
-
 
 go get -u zxq.co/Sunpy/avatar-server-go
 mkdir avatar-server
