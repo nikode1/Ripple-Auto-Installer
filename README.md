@@ -91,13 +91,21 @@ You can ask for any kinds of help regarding this project via Discord DMs or thro
 * <a href=https://github.com/Ozymandias42>Ozymandias42</a> - Thank You so much for rearranging and styling everything. You're the best <3.
 * <a href=https://github.com/LilPietrek>LilPietrek</a> - Thanks for your time for managing and supporting my shell project.
 * <a href=https://github.com/FIREFOXCYBER>! FoXy !</a> - Thanks for endless support and solve all the problems.
-* <a href=https://github.com/Hazuki-san>Aoba Suzukaze</a> - Thanks you for your ripple auto installer project. Really helped me a lot.
+* <a href=https://github.com/r33int>r33int</a> - Thanks for immediate response and help.
+* <a href=https://github.com/ssCherry>Cherry</a> - Thanks for endless help.
+* <a href=https://github.com/denmarkistrash>Simon</a> - Thanks for endless help and solving problems.
+* <a href=https://github.com/Hazuki-san>Aoba Suzukaze</a> - Thanks you for your ripple auto installer project and best helps <3 
 * <a href=https://github.com/ppy>peppy</a> - Thank you for the wonderful game.
 * <a href=https://github.com/osuripple>Ripple</a> - Thank you for your private server.
 * <a href=https://github.com/osufx>osu!fx</a> - Thanks for the secret module!
 * <a href=https://github.com/osuYozora>osu!Yozora</a> - Thanks for the past!
-* <a href=https://github.com/EmilySunpy>Sunpy</a> - Thanks for most of the commands and dependencies!
+* <a href=https://github.com/Nightsh0t>Night</a> - Thanks for the helps, maybe you're a bit rude.
+* <a href=https://github.com/infernalfire72>Flame</a> - Thanks for the your help and time. Good supporter too <3 
+* <a href=https://github.com/EmilySunpy>Sunpy</a> - Thanks for most of the commands and dependencies! And little help too
 * <a href=https://github.com/rumoi>rumoi</a> - Thanks for the Support!
 
 # License [![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0) [![License: ODbL](https://img.shields.io/badge/License-ODbL-brightgreen.svg)](https://opendatacommons.org/licenses/odbl/)
 This installer falls under the GNU Affero General Public License V3. For more information, see the file `LICENSE` or visit https://www.gnu.org/licenses/agpl-3.0.
+
+# [![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://GitHub.com/Naereen/) [![ForTheBadge built-by-developers](http://ForTheBadge.com/images/badges/built-by-developers.svg)](https://GitHub.com/Naereen/)
+
