@@ -877,6 +877,23 @@ CREATE TABLE `users_stats` (
   `show_custom_badge` tinyint(1) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+-- Create Table `users_beatmap_playcount`
+
+
+
+CREATE TABLE `users_beatmap_playcount` (
+	`user_id` INT(11) NOT NULL,
+	`beatmap_id` INT(11) NULL DEFAULT NULL,
+	`game_mode` INT(11) NULL DEFAULT NULL,
+	`playcount` INT(11) NULL DEFAULT NULL,
+	UNIQUE INDEX `user_id` (`user_id`),
+	UNIQUE INDEX `beatmap_id` (`beatmap_id`)
+)
+COLLATE='utf8_general_ci'
+ENGINE=InnoDB
+;
+
+
 --
 -- Dumping data for table `users_stats`
 --
