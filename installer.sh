@@ -441,7 +441,7 @@ nginx
 echo "Setup is done... It's still in development. It took $DIFF seconds, to setup the server!"
 echo "also you can access PhpMyAdmin here... http://old.$domain/phpmyadmin"
 
-printf "\n\nDo you like our Installer? [y/n]: "
+printf "\n\nSetup is done.Continue? [y/n]: "
 read q
 if [ "$q" = "y" ]; then
 	printf "\n\nWell... Thank you, much appreciated! You can start the server now, If you don't know how you can check my github Repo.\n\nAlright!\n\n"
