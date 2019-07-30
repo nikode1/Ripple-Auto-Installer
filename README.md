@@ -1,5 +1,6 @@
-# Auto Ripple Server Installer <a href="//www.dmca.com/Protection/Status.X" title="DMCA.com Protection Status" class="dmca-badge"> <img src ="https://images.dmca.com/Badges/dmca_protected_16_120.png?ID=e27dca2b-597b-4718-b582-372dd24ab1b5"  alt="DMCA.com Protection Status" /></a>
-[![made-with-bash](https://img.shields.io/badge/Made%20with-Bash-1f425f.svg)](https://www.gnu.org/software/bash/)  [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/Uniminin/) 
+# Auto Ripple Server Installer [![made-with-bash](https://img.shields.io/badge/Made%20with-Bash-1f425f.svg)](https://www.gnu.org/software/bash/)  [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/Uniminin/) 
+
+<a href="//www.dmca.com/Protection/Status.X" title="DMCA.com Protection Status" class="dmca-badge"> <img src ="https://images.dmca.com/Badges/dmca_protected_16_120.png?ID=e27dca2b-597b-4718-b582-372dd24ab1b5"  alt="DMCA.com Protection Status" /></a>
 
 <b>**THIS SCRIPT IS NOT FOR LOCAL PC (localhost)**</b><br>
 Ripple: https://github.com/osuripple |
@@ -12,8 +13,10 @@ Uniminin's Auto Ripple OSU! Server Installer!
 # Important Note
 This Script installs most of the things for server! If you want to use other stuffs, You need to edit it yourself. Please Star and Fork it if you use it! (THIS IS NOT DESIGNED FOR WINDOWS OR FOR LOCAL PC!) This is designed to be used on VPS.
 Also Please Do Note that when you're using this script, if you get any errors you'll have to fix it yourself. If you don't have enough knowledge on linux and how ripple works, then I would prefer you to not host it. Wish you all the best
+
 # Requirements
 * Any VPS with Ubuntu OS is strongly recommended
+* Ubuntu 16.04 
 
 # Features
 * A configurable shell script for installing most of the things for your clone Ripple server
