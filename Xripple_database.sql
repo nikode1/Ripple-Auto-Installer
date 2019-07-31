@@ -886,7 +886,7 @@ CREATE TABLE `users_beatmap_playcount` (
 	`beatmap_id` INT(11) NULL DEFAULT NULL,
 	`game_mode` INT(11) NULL DEFAULT NULL,
 	`playcount` INT(11) NULL DEFAULT NULL,
-	UNIQUE INDEX `keesu_index_tmp` (`user_id`, `beatmap_id`)
+	UNIQUE INDEX `playcount_index` (`user_id`, `beatmap_id`)
 )
 COLLATE='utf8_general_ci'
 ENGINE=InnoDB
