@@ -114,3 +114,5 @@ This installer falls under the GNU Affero General Public License V3. For more in
 
 # [![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://GitHub.com/Naereen/) [![ForTheBadge built-by-developers](http://ForTheBadge.com/images/badges/built-by-developers.svg)](https://GitHub.com/Naereen/)
 
+Licensed under the Free Will License AKA WTFPL http://www.wtfpl.net
+
