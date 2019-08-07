@@ -865,6 +865,34 @@ CREATE TABLE `users_stats` (
   `show_custom_badge` tinyint(1) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+-- Create Table `users_beatmap_playcount`
+CREATE TABLE `users_beatmap_playcount` (
+	`user_id` INT(11) NOT NULL,
+	`beatmap_id` INT(11) NULL DEFAULT NULL,
+	`game_mode` INT(11) NULL DEFAULT NULL,
+	`playcount` INT(11) NULL DEFAULT NULL,
+	UNIQUE INDEX `playcount_index` (`user_id`, `beatmap_id`)
+)
+COLLATE='utf8_general_ci'
+ENGINE=InnoDB
+;
+-----
+
+-- --------------------------------------------------------
+
+-- Dumping structure for table ripple.rap_logs
+CREATE TABLE IF NOT EXISTS `rap_logs` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `userid` int(10) NOT NULL,
+  `text` longtext NOT NULL,
+  `datetime` int(30) NOT NULL,
+  `through` text NOT NULL,
+  KEY `id` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+
 --
 -- Dumping data for table `users_stats`
 --
