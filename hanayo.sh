@@ -18,6 +18,8 @@ source ~/.bashrc
 sudo go get -u zxq.co/ripple/hanayo
 cd go/src/zxq.co/ripple/hanayo
 sudo go build .
+
+# Make Sure to press "enter" and type "I agree" (hanayo licence agreement)
 ./hanayo
 clear
 ./hanayo
