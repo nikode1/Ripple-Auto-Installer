@@ -2,6 +2,7 @@
 clear
 
 sudo apt-get update && sudo apt-get update -y
+sudo apt-get install git -y
 sudo add-apt-repository ppa:longsleep/golang-backports -y
 sudo apt-get update
 sudo apt-get install golang-go -y
