@@ -15,9 +15,9 @@ echo 'export PATH=${PATH}:${GOPATH}/bin' >> ~/.bashrc
 source ~/.bashrc
 
 # Cloning Hanayo (from zxq.co), github?;old
-go get -u zxq.co/ripple/hanayo
+sudo go get -u zxq.co/ripple/hanayo
 cd go/src/zxq.co/ripple/hanayo
-go build .
+sudo go build .
 ./hanayo
 clear
 ./hanayo
