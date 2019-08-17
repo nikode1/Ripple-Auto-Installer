@@ -1,13 +1,11 @@
 #!/bin/bash
 clear
 
-[ $(id -u) -ne 0 ] && { echo "Needs to be run with sudo!" ; exit ; }
-
-apt-get update && apt-get update -y
-add-apt-repository ppa:longsleep/golang-backports -y
-apt-get update
-apt-get install golang-go -y
-apt-get update && apt-get update -y
+sudo apt-get update && sudo apt-get update -y
+sudo add-apt-repository ppa:longsleep/golang-backports -y
+sudo apt-get update
+sudo apt-get install golang-go -y
+sudo apt-get update && sudo apt-get update -y
 
 echo 'export GOPATH=$HOME/go' >> ~/.bashrc
 echo 'export PATH=${PATH}:${GOPATH}/bin' >> ~/.bashrc
@@ -19,4 +17,4 @@ go build .
 ./hanayo
 clear
 ./hanayo
-Echo "Done! You Can Now view your site in localhost:45221"
+echo "Done! You Can Now view your site in localhost:45221"
