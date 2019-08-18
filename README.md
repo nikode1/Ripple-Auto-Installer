@@ -1,3 +1,9 @@
+# 
+# NOTE: THESE SCRIPTS ARE OUTDATED AND PRETTY MUCH BROKEN! ALSO OUTDATED DEPENDENCIES WHICH MAKES THE STACK TO NOT WORK PROPERLY!!!
+Me and <a href=https://github.com/Kreyren>Krey</a> are working to fix Ripple code and create a new efficient Auto Ripple Stack Installer Script! It might take a while but we will complete it within this year. Not now but surely!
+
+
+
 # Auto Ripple Server Installer [![made-with-bash](https://img.shields.io/badge/Made%20with-Bash-1f425f.svg)](https://www.gnu.org/software/bash/)  [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/Uniminin/) 
 
 <a href="//www.dmca.com/Protection/Status.X" title="DMCA.com Protection Status" class="dmca-badge"> <img src ="https://images.dmca.com/Badges/dmca_protected_16_120.png?ID=e27dca2b-597b-4718-b582-372dd24ab1b5"  alt="DMCA.com Protection Status" /></a>
