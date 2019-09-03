@@ -1,6 +1,8 @@
 #!/bin/bash
 clear
-# THIS SCRIPT IS ORIGINALLY FROM SUNPY #
+# THIS SCRIPT IS ORIGINALLY FROM SUNPY # 
+# Edited and made better by Aoba Suzukaze (Hazuki)
+
 printf "This script has to run in sudo mode.\nIf this isn't the case CTRL+C now.\nAlso please don't install this in /root/ but whatever I installed it but I don't really care anyway.\nThis is also meant to be used on a fresh Ubuntu 16.04 install but you can use other OS anyway because this creates a new database etc.\nThis installer is simplistic as its just something I put together so I could easily recreate the server once things change or when I move server around for testing etc.\n\t- Aoba\n"
 
 server-install () {
@@ -64,6 +66,7 @@ mysql_psw=${mysql_psw:=meme}
 printf "\n\nAlright! Let's see what I can do here...\n\n"
 
 # Configuration is done.
+
 # Start installing/downloading/setup
 
 START=$(date +%s)
@@ -180,7 +183,7 @@ echo "NGINX server setup is done!"
 
 echo "Setting up database..."
 # Download SQL folder
-wget -O ripple.sql https://raw.githubusercontent.com/Hazuki-san/ripple-auto-installer/master/ripple_database.sql
+wget -O ripple.sql https://raw.githubusercontent.com/Uniminin/Osu-Ripple-Stack-Installer/master/ripple_database.sql
 mysql -u "$mysql_usr" -p"$mysql_psw" -e 'CREATE DATABASE ripple;'
 mysql -u "$mysql_usr" -p"$mysql_psw" ripple < ripple.sql
 echo "Database setup is done!"
