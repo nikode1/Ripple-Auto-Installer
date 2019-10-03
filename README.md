@@ -80,6 +80,12 @@ wget https://raw.githubusercontent.com/Uniminin/Ripple-Auto-Installer/master/uni
 chmod +x uninstaller.sh && ./uninstaller.sh
 ```
 
+# Extras:
+* <a href=https://old.ppy.sh/p/api>OSU!API</a>
+* <a href=http://www.dot.tk>Dot.Tk</a>
+* <a href=https://my.freenom.com>Freenom</a>
+* <a href=https://tmuxguide.readthedocs.io/en/latest/tmux/tmux.html>Tmux Docs</a>
+
 # Tested OS
 
 | NO | Status| Platform|
