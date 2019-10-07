@@ -1,7 +1,9 @@
 #!/bin/bash
 clear
-set -e
-[ $(id -u) -ne 0 ] && { echo "Run as root dir/sudo. Please ctrl+c and then type, sudo-i" ; exit ; }
+# THIS SCRIPT IS ORIGINALLY FROM SUNPY # 
+# Edited and made better by Aoba Suzukaze (Hazuki) with a bit of Uniminin's Edit.
+
+printf "This script has to run in sudo mode.\nIf this isn't the case CTRL+C now.\nAlso please don't install this in /root/ but whatever I installed it but I don't really care anyway.\nThis is also meant to be used on a fresh Ubuntu 16.04 install but you can use other OS anyway because this creates a new database etc.\nThis installer is simplistic as its just something I put together so I could easily recreate the server once things change or when I move server around for testing etc.\n\t- Aoba\n"
 
 server-install () {
 
@@ -14,17 +16,17 @@ MasterDir=${MasterDir:=$(pwd)"/ripple"}
 printf "\n\n..:: NGINX CONFIGS ::.."
 while [ $valid_domain -eq 0 ]
 do
-printf "\nMain domain: "
+printf "\nMain domain name: "
 read domain
 
 if [ "$domain" = "" ]; then
-	printf "\n\nYou need to specify the main domain. Example: test.tk"
+	printf "\n\nYou need to specify the main domain. Example: cookiezi.pw"
 else
 	printf "\n\nFrontend: $domain"
 	printf "\nBancho: c.$domain"
 	printf "\nAvatar: a.$domain"
 	printf "\nBackend: old.$domain"
-	printf "\n\nAgree? [Y]: "
+	printf "\n\nIs this configuration correct? [y/n]: "
 	read q
 	if [ "$q" = "y" ]; then
 		valid_domain=1
@@ -38,7 +40,7 @@ read peppy_cikey
 peppy_cikey=${peppy_cikey:=changeme}
 
 printf "\n\n..:: LETS SERVER::.."
-printf "\nosuapi-apikey [OSU! API]: "
+printf "\nosuapi-apikey [YOUR_OSU_API_KEY_HERE]: "
 read lets_osuapikey
 lets_osuapikey=${lets_osuapikey:=YOUR_OSU_API_KEY_HERE}
 printf "\nPP Cap [700]: "
@@ -61,74 +63,54 @@ printf "\nPassword [meme]: "
 read mysql_psw
 mysql_psw=${mysql_psw:=meme}
 
+printf "\n\nAlright! Let's see what I can do here...\n\n"
+
+# Configuration is done.
+
+# Start installing/downloading/setup
+
 START=$(date +%s)
 
-        apt-get update
-        sudo apt-get update && sudo apt-get upgrade -y
-        sudo apt-get update
-	apt-get -qq update && apt-get -qq dist-upgrade
-	sudo apt-get install build-essential autoconf libtool pkg-config python3-opengl python-imaging* python-pyrex* python3-pyside.qtopengl idle-python3.6 qt4-dev-tools qt4-designer libqtgui4 libqtcore4 libqt4-xml libqt4-test libqt4-script libqt4-network libqt4-dbus python-qt4 python-qt4-gl libgle3 python3-dev -y
-	sudo add-apt-repository ppa:jonathonf/python-3.6 -y
-	apt-get update
-	apt-get install python3.6
-	sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.5 
-	sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.6 
-	apt-get update
-	sudo rm /usr/bin/python3
-	sudo ln -s python3.5 /usr/bin/python3
-	apt-get update
-	sudo add-apt-repository ppa:deadsnakes/ppa -y
-	sudo apt-get update
-	apt-get install python3 python3-dev -y
-	sudo apt-get update
-	add-apt-repository ppa:ondrej/php -y
-	sudo apt-get update
-	add-apt-repository ppa:longsleep/golang-backports -y
-	apt-get update
-	apt install git curl python3-pip python3-mysqldb -y
-	sudo apt-get update
-	apt-get install python3-dev libmysqlclient-dev nginx software-properties-common libssl-dev mysql-server -y
-	sudo apt-get update
-	sudo apt install python3-pip -y
-	sudo apt install gcc -y
-	apt-get install tmux -y
-	sudo apt-get update && sudo apt-get upgrade -y
-	apt install git -y
-	pip3 install --upgrade pip
-	pip3 install mysqlclient
-	pip3 install flask
-	pip3 install raven
-	pip3 install bcrypt
-	pip3 install tornado
-	apt install libmysqlclient-dev -y
-	pip3 install -U pip
-	pip3 install Cython
-	pip3 install setuptools
-	apt-get update
-	apt-get install php7.0 php7.0-mbstring php7.0-mcrypt php7.0-fpm php7.0-curl php7.0-mysql golang-go -y
-	apt-get install composer -y
-	apt-get install zip unzip php7.0-zip -y
+echo "Installing dependencies..."
+apt-get update
+## SOME UPDATES FOR GCP VPSES OR OTHER VPS PROVIDER
+sudo apt-get install build-essential autoconf libtool pkg-config python-opengl python-imaging python-pyrex python-pyside.qtopengl idle-python2.7 qt4-dev-tools qt4-designer libqtgui4 libqtcore4 libqt4-xml libqt4-test libqt4-script libqt4-network libqt4-dbus python-qt4 python-qt4-gl libgle3 python-dev -y	 
+sudo add-apt-repository ppa:deadsnakes/ppa -y
+sudo apt-get update
+apt-get install python3 python3-dev -y
+add-apt-repository ppa:ondrej/php -y
+add-apt-repository ppa:longsleep/golang-backports -y
+apt-get update
+apt install git curl python3-pip python3-mysqldb -y
+apt-get install python-dev libmysqlclient-dev nginx software-properties-common libssl-dev mysql-server -y
+pip3 install --upgrade pip
+pip3 install flask
+apt-get install php7.0 php7.0-mbstring php7.0-mcrypt php7.0-fpm php7.0-curl php7.0-mysql golang-go -y
+apt-get install composer -y
+apt-get install zip unzip php7.0-zip -y
 
+echo "Done installing dependencies!"
 mkdir ripple
 cd ripple
+
+echo "Downloading Bancho server..."
 cd $MasterDir
-git clone https://github.com/osuripple/pep.py
+git clone https://zxq.co/ripple/pep.py
 cd pep.py
 git submodule init && git submodule update
 python3.6 -m pip install -r requirements.txt
-cd handlers
-rm -rf mainHandler.pyx
-wget -O mainHandler.pyx https://pastebin.com/raw/HG9Khfux
-cd ..
 python3.6 setup.py build_ext --inplace
 python3.6 pep.py
 sed -i 's#root#'$mysql_usr'#g; s#changeme#'$peppy_cikey'#g'; s#http://.../letsapi#'http://127.0.0.1:5002/letsapi'#g; s#http://cheesegu.ll/api#'https://cg.mxr.lol/api'#g' config.ini
 sed -E -i -e 'H;1h;$!d;x' config.ini -e 's#password = #password = '$mysql_psw'#'
 cd $MasterDir
+echo "Bancho Server setup is done!"
 
-git clone https://github.com/osuripple/lets
+echo "Setting up LETS server & oppai..."
+git clone https://zxq.co/ripple/lets
 cd lets
 python3.6 -m pip install -r requirements.txt
+echo "Downloading patches"
 cd pp
 rm -rf oppai-ng/
 git clone https://github.com/Francesco149/oppai-ng
@@ -142,11 +124,13 @@ rm -rf __init__.py
 wget -O __init__.py https://pastebin.com/raw/gKaPU6C6
 wget -O wifipiano2.py https://pastebin.com/raw/ZraV7iU9
 cd ..
+#IT WAS A STUPID IDEA TO COPY COMMON FROM PEP.PY
 rm -rf common
 git clone https://zxq.co/ripple/ripple-python-common
 mv ripple-python-common/ common/
 cd $MasterDir/lets/handlers
 sed -i 's#700#'$pp_cap'#g' submitModularHandler.pyx
+# difficulty_ctb fix
 cd $MasterDir/lets/objects
 sed -i 's#dataCtb["difficultyrating"]#'dataCtb["diff_aim"]'#g' beatmap.pyx
 cd $MasterDir/lets
@@ -161,7 +145,12 @@ wget -O config.py https://pastebin.com/raw/E0zUvLuU
 sed -i 's#root#'$mysql_usr'#g; s#mysqlpsw#'$mysql_psw'#g; s#DOMAIN#'$domain'#g; s#changeme#'$peppy_cikey'#g; s#YOUR_OSU_API_KEY_HERE#'$lets_osuapikey'#g; s#http://cheesegu.ll/api#'https://cg.mxr.lol/api'#g' config.py
 cd $MasterDir
 echo "LETS Server setup is done!"
+
+echo "Installing Redis..."
 apt-get install redis-server -y
+echo "REDIS Server setup is done!"
+
+echo "Downloading nginx config..."
 mkdir nginx
 cd nginx
 systemctl restart php7.0-fpm
@@ -177,17 +166,25 @@ sed -i 's#DOMAIN#'$domain'#g; s#DIRECTORY#'$MasterDir'#g; s#6969#'$hanayo_port'#
 wget -O old-frontend.conf https://pastebin.com/raw/bMXE2m6n
 sed -i 's#DOMAIN#'$domain'#g; s#DIRECTORY#'$MasterDir'#g; s#6969#'$hanayo_port'#g' old-frontend.conf
 echo "Downloading certificate..."
-wget -O cert.pem https://raw.githubusercontent.com/osuthailand/ainu-certificate/master/cert.pem
-wget -O key.pem https://raw.githubusercontent.com/osuthailand/ainu-certificate/master/key.key
+wget -O cert.pem https://github.com/Uniminin/Ripple-Auto-Installer/blob/master/X/cert.pem
+wget -O key.pem https://github.com/Uniminin/Ripple-Auto-Installer/blob/master/X/key.key
 echo "Certificate downloaded!"
+pkill -f nginx
 nginx
 cd $MasterDir
-wget -O ripple.sql https://raw.githubusercontent.com/Uniminin/AOBAS-LATEST-RIPPLE-INSTALLER/master/ripple_database.sql
+echo "NGINX server setup is done!"
+
+echo "Setting up database..."
+# Download SQL folder
+wget -O ripple.sql https://raw.githubusercontent.com/Uniminin/Ripple-Auto-Installer/master/Database%20files/ripple_database.sql
 mysql -u "$mysql_usr" -p"$mysql_psw" -e 'CREATE DATABASE ripple;'
 mysql -u "$mysql_usr" -p"$mysql_psw" ripple < ripple.sql
+echo "Database setup is done!"
+
+echo "Setting up hanayo..."
 mkdir hanayo
 cd hanayo
-go get -u https://github.com/osuripple/hanayo
+go get -u zxq.co/ripple/hanayo
 mv /root/go/bin/hanayo ./
 mv /root/go/src/zxq.co/ripple/hanayo/data ./data
 mv /root/go/src/zxq.co/ripple/hanayo/scripts ./scripts
@@ -200,10 +197,13 @@ sed -i 's#ListenTo=#ListenTo=127.0.0.1:'$hanayo_port'#g; s#AvatarURL=#AvatarURL=
 sed -E -i -e 'H;1h;$!d;x' hanayo.conf -e 's#DSN=#DSN='$mysql_usr':'$mysql_psw'@/ripple#'
 sed -E -i -e 'H;1h;$!d;x' hanayo.conf -e 's#API=#API=http://localhost:40001/api/v1/#'
 cd $MasterDir
+echo "Hanayo setup is done!"
 
+echo "Setting up API..."
 mkdir rippleapi
 cd rippleapi
 go get -u zxq.co/ripple/rippleapi
+#Ugly fix?
 rm -rf /root/go/src/zxq.co/ripple
 mv /root/go/src/zxq.co/rippleapi /root/go/src/zxq.co/ripple
 go build zxq.co/ripple/rippleapi
@@ -211,16 +211,22 @@ mv /root/go/bin/rippleapi ./
 ./rippleapi
 sed -i 's#root@#'$mysql_usr':'$mysql_psw'@#g; s#Potato#'$hanayo_apisecret'#g; s#OsuAPIKey=#OsuAPIKey='$peppy_cikey'#g' api.conf
 cd $MasterDir
+echo "API setup is done!"
 
+echo "Setting up avatar server..."
 go get -u zxq.co/Sunpy/avatar-server-go
 mkdir avatar-server
 mkdir avatar-server/avatars
 mv /root/go/bin/avatar-server-go ./avatar-server/avatar-server
 cd $MasterDir/avatar-server/avatars
-wget -O 0.png https://raw.githubusercontent.com/osuthailand/avatar-server/master/avatars/-1.png
-wget -O 999.png https://raw.githubusercontent.com/osuthailand/avatar-server/master/avatars/0.png
+# DEFAULT AVATAR
+wget -O 0.png https://github.com/Uniminin/Ripple-Auto-Installer/blob/master/X/null.png
+# AC AVATAR
+wget -O 999.png https://github.com/Uniminin/Ripple-Auto-Installer/blob/master/X/ac.png
 cd $MasterDir
+echo "Avatar Server setup is done!"
 
+echo "Setting up backend..."
 cd /var/www/
 git clone https://zxq.co/ripple/old-frontend.git
 mv old-frontend osu.ppy.sh
@@ -234,34 +240,46 @@ composer install
 rm -rf secret
 git clone https://github.com/osufx/secret.git
 cd $MasterDir
+echo "Backend server is done!"
 
+echo "Setting up PhpMyAdmin..."
 apt-get install phpmyadmin -y
 cd /var/www/osu.ppy.sh
 ln -s /usr/share/phpmyadmin phpmyadmin
+echo "PhpMyAdmin setup is done!"
 
+echo "Making up certificate for SSL"
 cd /root/
 git clone https://github.com/Neilpang/acme.sh
 apt-get install socat -y
 cd acme.sh/
 ./acme.sh --install
 ./acme.sh --issue --standalone -d $domain -d c.$domain -d i.$domain -d a.$domain -d old.$domain
+echo "Certificate is ready!"
 
+echo "Changing folder and files permissions"
 chmod -R 777 ../ripple
 
 END=$(date +%s)
 DIFF=$(( $END - $START ))
 
-pkill -f nginx
 nginx
+echo "Setup is done... but I guess it's still indevelopment. It took $DIFF seconds. To setup the server!"
+echo "You can access PhpMyAdmin here... http://old.$domain/phpmyadmin"
 
-echo "Setup is done"
-echo "PhpMyAdmin can be accessed here: http://old.$domain/phpmyadmin"
-
+printf "\n\nDo you like our installer? [y/n]: "
+read q
+if [ "$q" = "y" ]; then
+	printf "\n\nWell... It just a fake message but thanks! You can start the server now.\n\nAlright! See you later in the next server!\n\n"
+fi
 
 }
 
 echo ""
-echo "Type Y and Enter to start the installation (Y)"
+echo "IMPORTANT: Ripple is licensed under the GNU AGPL license. This means, if your server is public, that ANY modification made to the original ripple code MUST be publically available."
+echo "Also, to run an osu! private server, as well as any sort of server, you need to have minimum knowledge of command line, and programming."
+echo "Running this script assumes you know how to use Linux in command line, secure and manage a server, and that you know how to fix errors, as they might happen while running that code."
+echo "Do you agree? (y/n)"
 read answer
 if [ "$answer" != "${answer#[Yy]}" ] ;then
     echo Continuing

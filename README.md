@@ -1,18 +1,17 @@
 # 
-# NOTE: THESE SCRIPTS ARE OUTDATED AND PRETTY MUCH BROKEN! ALSO OUTDATED DEPENDENCIES WHICH MAKES THE STACK TO NOT WORK PROPERLY!!!
-Me and <a href=https://github.com/Kreyren>Krey</a> are working to fix Ripple code and create a new efficient Auto Ripple Stack Installer Script! It might take a while but we will complete it within this year. Not now but surely!
+# NOTE: THESE SCRIPTS ARE OUTDATED AND PRETTY MUCH BROKEN! ALSO OUTDATED DEPENDENCIES WHICH MAKES THE STACK TO NOT WORK PROPERLY!!! <a href="//www.dmca.com/Protection/Status.X" title="DMCA.com Protection Status" class="dmca-badge"> <img src ="https://images.dmca.com/Badges/dmca_protected_16_120.png?ID=e27dca2b-597b-4718-b582-372dd24ab1b5"  alt="DMCA.com Protection Status" /></a>
+Me, <a href=https://github.com/Kreyren>Krey</a> and with the help of some of our other friends are working to fix Ripple code and create a new efficient Auto Ripple Stack Installer Script! It might take a while but we will complete it within this year. Not now but surely!
 
 
 # Auto Ripple Server Installer [![made-with-bash](https://img.shields.io/badge/Made%20with-Bash-1f425f.svg)](https://www.gnu.org/software/bash/)  [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/Uniminin/) 
 
-<a href="//www.dmca.com/Protection/Status.X" title="DMCA.com Protection Status" class="dmca-badge"> <img src ="https://images.dmca.com/Badges/dmca_protected_16_120.png?ID=e27dca2b-597b-4718-b582-372dd24ab1b5"  alt="DMCA.com Protection Status" /></a>
 
 <b>**THIS SCRIPT IS NOT FOR LOCAL PC (localhost)**</b><br>
-Ripple: https://github.com/osuripple |
-Uniminin's Auto Ripple OSU! Server Installer! 
+Github: https://github.com/osuripple |
+Origin: https://zxq.co/ripple/lets
 
 <p align="center">
-  <img src="https://github.com/Uniminin/Ripple-Auto-Installer/blob/master/ripple.svg"/>
+  <img src="https://github.com/Uniminin/Ripple-Auto-Installer/blob/master/X/ripple.svg"/>
 </p>
 
 # Important Note
@@ -38,7 +37,7 @@ Also Please Do Note that when you're using this script, if you get any errors yo
 First of all you need to download it by either by downloading it from GitHub, or running this command to download: 
 
 ```bash
-wget https://raw.githubusercontent.com/Uniminin/Ripple-Auto-Installer/master/installer.sh
+wget https://raw.githubusercontent.com/Uniminin/Ripple-Auto-Installer/master/Main/ripple.sh
 ```
 
 ### Step 2:
@@ -52,7 +51,7 @@ chmod +x installer.sh && ./installer.sh
 You `don't have to be root` then, although `it is recommended`.
 
 ### Step 3: Follow These Steps To Start The Server!
-<img src="https://github.com/Uniminin/Ripple-Auto-Installer/blob/master/start.png"/>
+<img src="https://github.com/Uniminin/Ripple-Auto-Installer/blob/master/X/start.png"/>
 
 
 Make sure you set your DNS like this:
@@ -71,7 +70,7 @@ Copy-Paste the following commands in the terminal to remove all dependencies ins
 ### Step 1:
 
 ```bash
-wget https://raw.githubusercontent.com/Uniminin/Ripple-Auto-Installer/master/uninstaller.sh
+wget https://raw.githubusercontent.com/Uniminin/Ripple-Auto-Installer/master/Extras/uninstaller.sh
 ```
 
 ### Step 2:
@@ -79,8 +78,9 @@ wget https://raw.githubusercontent.com/Uniminin/Ripple-Auto-Installer/master/uni
 ```bash
 chmod +x uninstaller.sh && ./uninstaller.sh
 ```
+Note: Although I strongly Recommend, in order to remove your server completely please reinstall your vps instance!
 
-# Extras:
+# Extras
 * <a href=https://old.ppy.sh/p/api>OSU!API</a>
 * <a href=http://www.dot.tk>Dot.Tk</a>
 * <a href=https://my.freenom.com>Freenom</a>
@@ -90,12 +90,12 @@ chmod +x uninstaller.sh && ./uninstaller.sh
 
 | NO | Status| Platform|
 |----|-------|---------|
-|1|[![](https://github.com/Uniminin/Ripple-Auto-Installer/blob/master/pass.svg)](https://github.com/uniminin)| Ubuntu
-|2|[![](https://github.com/Uniminin/Ripple-Auto-Installer/blob/master/pass.svg)](https://github.com/uniminin)| Pop!OS
-|3|[![](https://github.com/Uniminin/Ripple-Auto-Installer/blob/master/pass.svg)](https://github.com/uniminin)| Kubuntu
-|4|[![](https://github.com/Uniminin/Ripple-Auto-Installer/blob/master/fail.svg)](https://github.com/uniminin)| Kali Linux
-|5|[![](https://github.com/Uniminin/Ripple-Auto-Installer/blob/master/fail.svg)](https://github.com/uniminin)| Mint 19
-|6|[![](https://github.com/Uniminin/Ripple-Auto-Installer/blob/master/fail.svg)](https://github.com/uniminin)| OpenSuse
+|1|[![](https://github.com/Uniminin/Ripple-Auto-Installer/blob/master/X/pass.svg)](https://github.com/uniminin)| Ubuntu
+|2|[![](https://github.com/Uniminin/Ripple-Auto-Installer/blob/master/X/pass.svg)](https://github.com/uniminin)| Pop!OS
+|3|[![](https://github.com/Uniminin/Ripple-Auto-Installer/blob/master/X/pass.svg)](https://github.com/uniminin)| Kubuntu
+|4|[![](https://github.com/Uniminin/Ripple-Auto-Installer/blob/master/X/fail.svg)](https://github.com/uniminin)| Kali Linux
+|5|[![](https://github.com/Uniminin/Ripple-Auto-Installer/blob/master/X/fail.svg)](https://github.com/uniminin)| Mint 19
+|6|[![](https://github.com/Uniminin/Ripple-Auto-Installer/blob/master/X/fail.svg)](https://github.com/uniminin)| OpenSuse
 
 # Need Help?
 You can ask for any kinds of help regarding this project via Discord DMs or through Github Issues.<br>

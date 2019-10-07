@@ -43,14 +43,9 @@ apt-get update
 sudo apt-get update && sudo apt-get upgrade -y
 apt install git -y
 pip3 install --upgrade pip
-pip3 install mysqlclient
-pip3 install flask
-pip3 install raven
-pip3 install bcrypt
-pip3 install tornado
 apt install libmysqlclient-dev -y
 pip3 install -U pip
-pip3 install Cython
+apt install Cython
 pip3 install setuptools
 apt-get update
 apt-get install php5.6 php5.6-mbstring php5.6-mcrypt php5.6-fpm php5.6-curl php5.6-mysql golang-go -y
@@ -71,7 +66,4 @@ apt-get update
 neofetch
 sleep 2
 figlet Done Installing!
-sleep 3
-figlet Enjoy!
-sleep 5
-aafire
+

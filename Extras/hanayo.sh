@@ -23,4 +23,3 @@ sudo go build .
 ./hanayo
 clear
 ./hanayo
-echo "Done! You Can Now view your site in localhost:45221"
