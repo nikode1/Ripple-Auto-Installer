@@ -719,11 +719,11 @@ CREATE TABLE `system_settings` (
 INSERT INTO `system_settings` (`id`, `name`, `value_int`, `value_string`) VALUES
 (1, 'website_maintenance', 0, ''),
 (2, 'game_maintenance', 0, ''),
-(5, 'registrations_enabled', 1, ''),
-(6, 'aql_threshold_std', 0, '1333.77'),
-(7, 'aql_threshold_taiko', 0, '1333.77'),
-(8, 'aql_threshold_ctb', 0, '1333.77'),
-(9, 'aql_threshold_mania', 0, '1333.77');
+(3, 'registrations_enabled', 1, ''),
+(4, 'aql_threshold_std', 0, '1333.77'),
+(5, 'aql_threshold_taiko', 0, '1333.77'),
+(6, 'aql_threshold_ctb', 0, '1333.77'),
+(7, 'aql_threshold_mania', 0, '1333.77');
 
 -- --------------------------------------------------------
 
