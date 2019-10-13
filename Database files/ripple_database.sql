@@ -719,9 +719,6 @@ CREATE TABLE `system_settings` (
 INSERT INTO `system_settings` (`id`, `name`, `value_int`, `value_string`) VALUES
 (1, 'website_maintenance', 0, ''),
 (2, 'game_maintenance', 0, ''),
-(3, 'website_global_alert', 0, '<center>Welcome to Ripple Clone! Setup by Aoba!
-<br><a href="https://new.bigtu.vip/">You can play Ainu! here</a></center>'),
-(4, 'website_home_alert', 0, 'Welcome to Ripple clone'),
 (5, 'registrations_enabled', 1, ''),
 (6, 'aql_threshold_std', 0, '1333.77'),
 (7, 'aql_threshold_taiko', 0, '1333.77'),
