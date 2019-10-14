@@ -20,11 +20,10 @@ declare mysql_psw
 declare GIT_ripple_peppy="https://zxq.co/ripple/pep.py"
 declare GIT_ripple_lets="https://zxq.co/ripple/lets"
 declare GIT_ripple_python_common="https://zxq.co/ripple/ripple-python-common"
-declare GIT_ripple_old_frontent="https://zxq.co/ripple/old-frontend.git"
+declare GIT_ripple_old_frontend="https://zxq.co/ripple/old-frontend.git"
 declare GIT_oppai_ng="https://github.com/Francesco149/oppai-ng"
 declare GIT_catch_the_pp="https://github.com/osuripple/catch-the-pp"
 declare GIT_osufx_secret="https://github.com/osufx/secret"
-declare GIT_osufx_secretgit="https://github.com/osufx/secret.git"
 declare GIT_acme.sh="https://github.com/Neilpang/acme.sh"
 
 askPrerequisites(){
@@ -172,18 +171,18 @@ install-bancho-server(){
 
 install-lets-server-and-oppai(){
 	echo "Setting Up LETS Server & Oppai..."
-	git clone https://zxq.co/ripple/lets
+	git clone $GIT_ripple_lets
 	cd lets
 	python3.6 -m pip install -r requirements.txt
 	echo "Downloading Patches"
 	cd pp
 	rm -rf oppai-ng/
-	git clone https://github.com/Francesco149/oppai-ng
+	git clone $GIT_oppai_ng
 	cd oppai-ng
 	./build
 	cd ..
 	rm -rf catch_the_pp/
-	git clone https://github.com/osuripple/catch-the-pp
+	git clone $GIT_catch_the_pp
 	mv catch-the-pp/ catch_the_pp/
 	rm -rf __init__.py
 	wget -O __init__.py https://pastebin.com/raw/gKaPU6C6
@@ -191,7 +190,7 @@ install-lets-server-and-oppai(){
 	cd ..
 	#IT WAS A STUPID IDEA TO COPY COMMON FROM PEP.PY
 	rm -rf common
-	git clone https://zxq.co/ripple/ripple-python-common
+	git clone $GIT_ripple_python_common
 	mv ripple-python-common/ common/
 	cd $MasterDir/lets/handlers
 	sed -i 's#700#'$pp_cap'#g' submitModularHandler.pyx
@@ -199,7 +198,7 @@ install-lets-server-and-oppai(){
 	cd $MasterDir/lets/objects
 	sed -i 's#dataCtb["difficultyrating"]#'dataCtb["diff_aim"]'#g' beatmap.pyx
 	cd $MasterDir/lets
-	git clone https://github.com/osufx/secret
+	git clone $GIT_osufx_secret
 	cd secret
 	git submodule init && git submodule update
 	cd ..
@@ -304,7 +303,7 @@ setup-avatar-server(){
 setup-backend-server(){
 	echo "Setting up Backend..."
 	cd /var/www/
-	git clone https://zxq.co/ripple/old-frontend.git
+	git clone $GIT_ripple_old_frontend
 	mv old-frontend osu.ppy.sh
 	cd osu.ppy.sh
 	curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
@@ -314,7 +313,7 @@ setup-backend-server(){
 	cd ..
 	composer install
 	rm -rf secret
-	git clone https://github.com/osufx/secret.git
+	git clone $GIT_osufx_secret
 	cd $MasterDir
 	echo "Backend server is Done!"
 }
@@ -330,7 +329,7 @@ setup-phpmyadmin(){
 install-ssl-certs(){
 	echo "Making Up Certificate For SSL"
 	cd /root/
-	git clone https://github.com/Neilpang/acme.sh
+	git clone $GIT_acme.sh
 	apt-get install socat -y
 	cd acme.sh/
 	./acme.sh --install
