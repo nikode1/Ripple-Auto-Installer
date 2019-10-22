@@ -21,7 +21,7 @@ Also Please Do Note that when you're using this script, if you get any errors yo
 
 # Requirements
 * Any VPS with Ubuntu OS is strongly recommended
-* Ubuntu 16.04 
+* Ubuntu 16.04+ OS/Server
 
 # Features
 * A configurable shell script for installing most of the things for your clone Ripple server
@@ -34,8 +34,8 @@ Also Please Do Note that when you're using this script, if you get any errors yo
 * Note: There are more than 1 installer from different persons, re-edited! You can use any of them you want, or just by a bit modifying yourself. Get those installers via `wget` (raw). And rename it to installer, then follow Step 2. You can also do `sudo sh installer.sh`
 
 ### Step 1:
-
-First of all you need to download it by either by downloading it from GitHub, or running this command to download: 
+Note: `Ripple.sh` <<= this script seems to be working. You may use this for now.
+First of all you need to download it by downloading it from GitHub, or running this command to download: 
 
 ```bash
 wget https://raw.githubusercontent.com/Uniminin/Ripple-Auto-Installer/master/Main/ripple.sh
@@ -104,8 +104,8 @@ You can ask for any kinds of help regarding this project via Discord DMs or thro
 @uniminin#1151 - Uniminin
 
 # Credits [![saythanks](https://img.shields.io/badge/say-thanks-ff69b4.svg)](https://github.com/Uniminin/)
-* <a href=https://github.com/Uniminin>Uniminin</a> - Main Script Successor. (Script Re-Birth;Soon)
-* <a href=https://github.com/Kreyren>Krey</a> - It's Krey; Then reborn
+* <a href=https://github.com/Uniminin>Uniminin</a> - Main Script Successor. (Owner)
+* <a href=https://github.com/Kreyren>Krey</a> - It's Krey. (Master Helper)
 * <a href=https://github.com/Ozymandias42>Ozymandias42</a> - Thank You so much for rearranging and styling everything. You're the best <3.
 * <a href=https://github.com/LilPietrek>LilPietrek</a> - Thanks for your time for managing and supporting my shell project.
 * <a href=https://github.com/FIREFOXCYBER>! FoXy !</a> - Thanks for endless support and solve all the problems.
@@ -122,10 +122,9 @@ You can ask for any kinds of help regarding this project via Discord DMs or thro
 * <a href=https://github.com/EmilySunpy>Sunpy</a> - Thanks for most of the commands and dependencies! And little help too
 * <a href=https://github.com/rumoi>rumoi</a> - Thanks for the Support!
 
-# License [![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0) [![License: ODbL](https://img.shields.io/badge/License-ODbL-brightgreen.svg)](https://opendatacommons.org/licenses/odbl/)
-This installer falls under the GNU Affero General Public License V3. For more information, see the file `LICENSE` or visit https://www.gnu.org/licenses/agpl-3.0.
+# License 2X :scroll: [![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0) [![License: ODbL](https://img.shields.io/badge/License-ODbL-brightgreen.svg)](https://opendatacommons.org/licenses/odbl/)
+This project is licenced under the GNU Affero General Public License V3. For more information, see the file `LICENSE` or visit https://www.gnu.org/licenses/agpl-3.0.
 
 # [![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://GitHub.com/Naereen/) [![ForTheBadge built-by-developers](http://ForTheBadge.com/images/badges/built-by-developers.svg)](https://GitHub.com/Naereen/)
 
-Licensed under the Free Will License AKA WTFPL http://www.wtfpl.net
-
+Also Licensed under the Free Will License AKA WTFPL http://www.wtfpl.net
