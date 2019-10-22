@@ -3,6 +3,7 @@
 Me, <a href=https://github.com/Kreyren>Krey</a> and with the help of some of our other friends are working to fix Ripple code and create a new efficient Auto Ripple Stack Installer Script! It might take a while but we will complete it within this year. Not now but surely!
 
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/cb1261c63f114f03afb11f6e26711662)](https://app.codacy.com/app/Uniminin/Ripple-Auto-Installer?utm_source=github.com&utm_medium=referral&utm_content=Uniminin/Ripple-Auto-Installer&utm_campaign=Badge_Grade_Settings)
 # Auto Ripple Server Installer [![made-with-bash](https://img.shields.io/badge/Made%20with-Bash-1f425f.svg)](https://www.gnu.org/software/bash/)  [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/Uniminin/) 
 
 
