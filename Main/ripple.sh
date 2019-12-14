@@ -40,6 +40,7 @@ get_domain() {
 		fi
 	fi
 	done
+	
 }
 
 general_config() {
@@ -75,7 +76,9 @@ general_config() {
 
 } 
 
+
 read -n 1 -s -r -p "Press Any key to confirm & continue >>"
+
 
 dependencies() {
 
@@ -108,6 +111,7 @@ dependencies() {
 
 
 make_main_dir() {
+
 	# Createing Master Folder
 	mkdir RIPPLE
 	cd RIPPLE
@@ -134,6 +138,7 @@ pep.py () {
 
 
 lets() {
+
 	echo "Cloning & Setting up LETS"
 	sleep 2
 	git clone https://zxq.co/ripple/lets
@@ -260,6 +265,7 @@ rippleapi() {
 	cd $MasterDir
 	echo "Setting up API is completed!"
 	sleep 2
+	
 }
 
 avatar_server() {
@@ -355,7 +361,9 @@ tmux() {
 	echo "tmux new-session -d -s hanayo 'tmux set remain-on-exit on && cd hanayo && ./hanayo'" >> tmux-start.sh
 	echo "echo TMUX window has been created. If they die restart them by calling ':respawn-window'" >> tmux-start.sh
 	chmod 777 tmux-start.sh
+	
 }
+
 
 run() {
 
@@ -376,6 +384,7 @@ run() {
 	finishing
 	server_start
 	tmux
+	
 }
 
 # Start the whole process
