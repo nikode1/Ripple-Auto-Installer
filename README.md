@@ -20,7 +20,7 @@
 
 ### Running the Script (Instructions)
 ```bash
-$ wget https://raw.githubusercontent.com/Uniminin/Ripple-Auto-Installer/master/Main/ripple.sh
+$ wget https://raw.githubusercontent.com/light-ripple/Ripple-Auto-Installer/master/Main/ripple.sh
 $ chmod +x ripple.sh 
 $ ./ripple.sh
 ```
