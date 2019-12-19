@@ -1,6 +1,5 @@
-# THIS SCRIPT IS ORIGINALLY FROM SUNPY # 
-# Edited and made better by Aoba Suzukaze (Hazuki) with a bit of Uniminin's Edit.
-# Contains UNIMININ'S Final Edits & Fixes
+# Ripple Helper Installation Script by UNIMININ!
+# Copyright @UNIMININ | Permission is hereby granted to any copyright holder!
 #!/bin/sh
 
 clear
