@@ -10,7 +10,7 @@
 </p>
 
 ### Requirements
-* Ubuntu/Debian/Bedrock with debian/ubuntu stratum
+* Ubuntu/Debian/Bedrock VPS with debian/ubuntu stratum
 
 ### Features
 * A configurable shell script for installing Ripple Stack
