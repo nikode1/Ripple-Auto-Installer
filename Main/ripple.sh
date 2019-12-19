@@ -1,5 +1,5 @@
 #!/bin/sh
-# Ripple Stack Installation Helper Installation Script by UNIMININ!
+# Ripple Stack Installation Helper Script by UNIMININ!
 # Copyright @UNIMININ | Permission is hereby granted to any copyright holder!
 
 clear && read -n 1 -s -r -p "Press Any key to confirm & continue >>"
