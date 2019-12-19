@@ -13,7 +13,7 @@ dependencies() {
 	echo "Starting To Install Required/Necessary Dependencies [<>]"
 	sleep 2 
 	
-	sudo apt-get install gcc g++ build-essential git wget mysql-server redis-server libmariadbclient-dev libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev
+	sudo apt-get install gcc g++ build-essential git tmux wget mysql-server redis-server libmariadbclient-dev libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev
 	sudo apt-get install checkinstall golang-go cython && cd cd /usr/src && sudo wget https://www.python.org/ftp/python/3.6.8/Python-3.6.8.tgz
 	sudo apt-get install nginx php-fpm composer php7.0-mbstring php7.0-curl php-mysql vsftpd luajit && sudo apt-get install mc screen
 	sudo tar xzf Python-3.6.8.tgz && cd Python-3.6.8
