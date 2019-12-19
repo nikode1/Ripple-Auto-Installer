@@ -84,7 +84,7 @@ Make sure you set your DNS like this:
 ### OSU!API
 * You can get OSU!API Key Here:<a href=https://old.ppy.sh/p/api>OSU!API</a>
 
-# Tested OS
+### Tested OS
 
 | NO | Status| Platform|
 |----|-------|---------|
