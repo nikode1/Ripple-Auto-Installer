@@ -10,16 +10,20 @@ Origin: https://zxq.co/ripple
 </p>
 
 ### Requirements
-* Any VPS with Linux OS/Environment is strongly recommended
-* Arch/Bedrock recommended
+* Ubuntu/Debian/Bedrock with debian/ubuntu stratum
 
 ### Features
 * A configurable shell script for installing Ripple Stack
-* Ripple Based
 * Everything is Pre-ready 
 * Simple and user friendly Installation
-* Installs the most of the things for your server within minutes
+* Installs most of the things for your server within minutes
 
+### Running the Script (Instructions)
+```bash
+$ wget https://raw.githubusercontent.com/Uniminin/Ripple-Auto-Installer/master/Main/ripple.sh
+$ chmod +x ripple.sh 
+$ ./ripple.sh
+```
 ### Domain
 Make sure you set your DNS like this:
 ```
