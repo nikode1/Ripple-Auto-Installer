@@ -9,33 +9,30 @@ Origin: https://zxq.co/ripple
   <img src="https://github.com/Uniminin/Ripple-Auto-Installer/blob/master/X/ripple.svg"/>
 </p>
 
-
-# Requirements
+### Requirements
 * Any VPS with Linux OS/Environment is strongly recommended
 * Arch/Bedrock recommended
 
-# Features
-* A configurable shell script for installing most of the things for your cloned Ripple server
+### Features
+* A configurable shell script for installing Ripple Stack
 * Ripple Based
 * Everything is Pre-ready 
 * Simple and user friendly Installation
 * Installs the most of the things for your server within minutes
 
-
-
+### Domain
 Make sure you set your DNS like this:
-
+```
 * YOUR-DOMAIN
 * c.YOUR-DOMAIN
 * i.YOUR-DOMAIN
 * a.YOUR-DOMAIN
 * s.YOUR-DOMAIN
 * old.YOUR-DOMAIN
-
+```
 
 # Extras
-* <a href=https://old.ppy.sh/p/api>OSU!API</a>
-
+* You can get OSU!API Key Here:<a href=https://old.ppy.sh/p/api>OSU!API</a>
 
 # Tested OS
 
@@ -52,5 +49,3 @@ You can ask for any kinds of help regarding this project via Discord DMs or thro
 
 # License :scroll: [![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
 This project is licenced under the GNU Affero General Public License V3. For more information, see the file `LICENSE` or visit https://www.gnu.org/licenses/agpl-3.0.
-
-
