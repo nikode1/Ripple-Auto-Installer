@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.5.4.1deb2ubuntu2.1
+-- version 4.5.4.1.5.4.3-arch1-1
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Mar 03, 2019 at 06:47 AM
--- Server version: 5.7.25-0ubuntu0.16.04.2
--- PHP Version: 7.0.33-2+ubuntu16.04.1+deb.sury.org+2+will+reach+end+of+life+in+april+2019
+-- Generation Time: December 19, 2019 at 10:10 PM
+-- Server version: 5.7.25-5.4.3-arch1-1
+-- PHP Version: 7.0.33-5.4.3-arch1-2020
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -218,11 +218,10 @@ CREATE TABLE `bancho_channels` (
 
 INSERT INTO `bancho_channels` (`id`, `name`, `description`, `public_read`, `public_write`, `status`, `temp`, `hidden`) VALUES
 (1, '#osu', 'Ripple global chat', 1, 1, 1, 0, 0),
-(2, '#announce', 'Announce channel', 1, 0, 1, 0, 0),
-(3, '#thai', 'Thai community', 1, 1, 1, 0, 0),
-(4, '#english', 'English community', 1, 1, 1, 0, 0),
-(5, '#admin', 'Are you admin?', 1, 1, 1, 0, 1),
-(6, '#lobby', 'This is the lobby where you find games to play with others!', 1, 1, 1, 0, 1);
+(2, '#announce', 'Announcement channel', 1, 0, 1, 0, 0),
+(3, '#english', 'English community', 1, 1, 1, 0, 0),
+(4, '#admin', 'Admin Section', 1, 1, 1, 0, 1),
+(5, '#lobby', 'This is the lobby where you find games to play with others!', 1, 1, 1, 0, 1);
 
 -- --------------------------------------------------------
 
@@ -274,9 +273,9 @@ CREATE TABLE `bancho_settings` (
 INSERT INTO `bancho_settings` (`id`, `name`, `value_int`, `value_string`) VALUES
 (1, 'bancho_maintenance', 0, ''),
 (2, 'free_direct', 1, ''),
-(3, 'menu_icon', 1, 'https://i.ppy.sh/logo.png | https://bigtu.vip'),
+(3, 'menu_icon', 1, 'https://i.ppy.sh/logo.png | https://ripple.moe'),
 (4, 'login_messages', 1, ''),
-(5, 'restricted_joke', 0, 'You\'re banned from the server.'),
+(5, 'restricted_joke', 0, 'You are banned from the server.'),
 (6, 'login_notification', 1, 'Welcome to pep.py'),
 (7, 'osu_versions', 0, ''),
 (8, 'osu_md5s', 0, '');
@@ -530,8 +529,7 @@ CREATE TABLE `main_menu_icons` (
 --
 
 INSERT INTO `main_menu_icons` (`id`, `is_current`, `file_id`, `name`, `url`) VALUES
-(1, 0, 'logo', 'osu!thailand', 'https://cookiezi.pw/'),
-(2, 1, 'logo-halloween', 'osu!thailand halloween', 'https://cookiezi.pw/');
+(1, 0, 'logo', 'osu!ripple', 'https://ripple.moe'),
 
 -- --------------------------------------------------------
 
@@ -861,35 +859,6 @@ CREATE TABLE `users_stats` (
   `can_custom_badge` tinyint(1) NOT NULL DEFAULT '0',
   `show_custom_badge` tinyint(1) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- Create Table `users_beatmap_playcount`
-CREATE TABLE `users_beatmap_playcount` (
-	`user_id` INT(11) NOT NULL,
-	`beatmap_id` INT(11) NULL DEFAULT NULL,
-	`game_mode` INT(11) NULL DEFAULT NULL,
-	`playcount` INT(11) NULL DEFAULT NULL,
-	UNIQUE INDEX `user_id` (`user_id`),
-	UNIQUE INDEX `beatmap_id` (`beatmap_id`)
-)
-COLLATE='utf8_general_ci'
-ENGINE=InnoDB
-;
------
-
--- --------------------------------------------------------
-
--- Dumping structure for table ripple.rap_logs
-CREATE TABLE IF NOT EXISTS `rap_logs` (
-  `id` int(10) NOT NULL AUTO_INCREMENT,
-  `userid` int(10) NOT NULL,
-  `text` longtext NOT NULL,
-  `datetime` int(30) NOT NULL,
-  `through` text NOT NULL,
-  KEY `id` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
 
 --
 -- Dumping data for table `users_stats`
