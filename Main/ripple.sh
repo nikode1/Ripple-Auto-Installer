@@ -1,6 +1,6 @@
+#!/bin/sh
 # Ripple Helper Installation Script by UNIMININ!
 # Copyright @UNIMININ | Permission is hereby granted to any copyright holder!
-#!/bin/sh
 
 clear
 
@@ -34,7 +34,7 @@ main_dir() {
 
 }
 
-pep.py () {
+peppy () {
 
 	echo "Cloning pep.py and setting it up"
 	sleep 2
@@ -166,7 +166,7 @@ run() {
 	dependencies
 	mysql_database
 	main_dir
-	pep.py
+	peppy
 	lets
 	avatar_server
 	hanayo
