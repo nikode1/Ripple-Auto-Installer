@@ -2,8 +2,8 @@
 
 
 <b>**THIS SCRIPT IS NOT FOR LOCAL PC (localhost)**</b><br>
-Github: https://github.com/Uniminin/Ripple-Auto-Installer |
-Origin: https://zxq.co/Uniminin/Ripple-Auto-Installer
+* Github: https://github.com/Uniminin/Ripple-Auto-Installer
+* MIRROR: https://zxq.co/Uniminin/Ripple-Auto-Installer
 
 <p align="center">
   <img src="https://github.com/Uniminin/Ripple-Auto-Installer/blob/master/X/ripple.svg"/>
