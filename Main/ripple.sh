@@ -11,10 +11,16 @@ read -n 1 -s -r -p "Press Any key to confirm & continue >>"
 
 dependencies() {
 
-	START=$(date +%s)
 	echo "Starting To Install Required/Necessary Dependencies [<>]"
-	sleep 2
+	sleep 2 
 	
+	sudo apt-get install gcc g++ build-essential git wget mysql-server redis-server libmariadbclient-dev libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev
+	sudo apt-get install checkinstall golang-go cython && cd cd /usr/src && sudo wget https://www.python.org/ftp/python/3.6.8/Python-3.6.8.tgz
+	sudo apt-get install nginx php-fpm composer php7.0-mbstring php7.0-curl php-mysql luajit && sudo apt-get install mc screen
+	sudo tar xzf Python-3.6.8.tgz && cd Python-3.6.8
+	sudo ./configure --enable-optimizations && sudo make altinstall
+ 	sudo apt-get install python3-pip
+ 	sudo apt-get update && sudo apt-get upgrade -y
 	
 	echo "Done Installing all the necessary Dependencies!"
 	sleep 2
