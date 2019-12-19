@@ -1,5 +1,5 @@
 #!/bin/sh
-# Ripple Helper Installation Script by UNIMININ!
+# Ripple Stack Installation Helper Script by UNIMININ!
 # Copyright @UNIMININ | Permission is hereby granted to any copyright holder!
 
 clear && read -n 1 -s -r -p "Press Any key to confirm & continue >>"
@@ -18,7 +18,6 @@ dependencies() {
 	sleep 2
 }
 
-
 main_dir() {
 	# Createing Master Folder
 	mkdir RIPPLE && cd RIPPLE
@@ -36,7 +35,6 @@ peppy () {
 	sleep 2
 }
 
-
 lets() {
 	echo "Cloning & Setting up LETS"
 	sleep 2
@@ -48,7 +46,6 @@ lets() {
 	echo "Setting up LETS is completed!"
 	sleep 2
 }
-
 
 mysql_datbase() {
 	echo "Setting up MySQL database!"
@@ -64,7 +61,6 @@ mysql_datbase() {
 	echo "Setting up MySQL Database is completed!"
 	sleep 2
 }
-
 
 hanayo() {
 	echo "Cloning & Setting up Hanayo!"
