@@ -81,7 +81,7 @@ Make sure you set your DNS like this:
 * old.YOUR-DOMAIN
 ```
 
-# OSU!API
+### OSU!API
 * You can get OSU!API Key Here:<a href=https://old.ppy.sh/p/api>OSU!API</a>
 
 # Tested OS
@@ -91,11 +91,11 @@ Make sure you set your DNS like this:
 |1|[![](https://github.com/Uniminin/Ripple-Auto-Installer/blob/master/X/pass.svg)](https://github.com/uniminin)| Bedrock
 |2|[![](https://github.com/Uniminin/Ripple-Auto-Installer/blob/master/X/fail.svg)](https://github.com/uniminin)| Archlinux
 
-# Need Help?
+### Need Help?
 You can ask for any kinds of help regarding this project via Discord DMs or through Github Issues.<br>
 <br>
 Disocrd:`uniminin#1151`
 
 
-# License :scroll: [![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
+### License :scroll: [![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
 This project is licenced under the GNU Affero General Public License V3. For more information, see the file `LICENSE` or visit https://www.gnu.org/licenses/agpl-3.0.
