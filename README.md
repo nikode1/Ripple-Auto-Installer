@@ -34,7 +34,7 @@ cd acme.sh
 ./acme.sh --issue --standalone -d osu.ripple.moe -d c.ripple.moe -d a.ripple.moe -d oldripple.ripple.moe
 ```  
 * Proxy  
-Edit and include ripple.conf in your nginx.conf
+Edit and include <a href=https://github.com/Uniminin/Ripple-Auto-Installer/blob/master/Main/ripple.conf>ripple.conf</a> in your nginx.conf
 
 ### Enable/Restart/Start Services
 ```
