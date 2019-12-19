@@ -94,7 +94,7 @@ Make sure you set your DNS like this:
 ### Need Help?
 You can ask for any kinds of help regarding this project via Discord DMs or through Github Issues.<br>
 <br>
-Disocrd:`uniminin#1151`
+Discord:`uniminin#1151`
 
 
 ### License :scroll: [![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
