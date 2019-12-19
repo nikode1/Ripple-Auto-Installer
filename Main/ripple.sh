@@ -143,8 +143,7 @@ finishing() {
 	
 	chmod -R 777 RIPPLE
 
-	echo "Done!"
-	sleep 1	
+	echo "Done Installing Ripple Stack!"
 
 }
 
