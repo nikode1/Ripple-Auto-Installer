@@ -70,7 +70,7 @@ lets() {
 
 mysql_datbase() {
 
-	echo "Setting up database!"
+	echo "Setting up MySQL database!"
 	sleep 2
 	
 	echo -n "Enter MySQL Username: "
@@ -122,7 +122,7 @@ rippleapi() {
 
 avatar_server() {
 
-	echo "Setting up avatar server!"
+	echo "Cloning & Setting up avatar server!"
 	sleep 2
 	
 	git clone https://github.com/Uniminin/OSU-AVATAR-SERVER && cd OSU-AVATAR-SERVER
@@ -133,6 +133,19 @@ avatar_server() {
 	sleep 1
 
 }
+
+old_frontend() {
+
+	echo "Cloning & Setting up old frontend!"
+	sleep 2
+	
+	git clone https://github.com/osuripple/old-frontend
+	composer install
+	git clone https://github.com/osufx/secret
+	cd $MasterDir
+	
+	echo "Setting up old frontend is done"
+	sleep 1
 
 
 finishing() {
@@ -150,13 +163,14 @@ finishing() {
 run() {
 
 	dependencies
+	mysql_database
 	main_dir
 	pep.py
 	lets
-	mysql_database
+	avatar_server
 	hanayo
 	rippleapi
-	avatar_server
+	old_frontend
 	finishing
 	
 }
