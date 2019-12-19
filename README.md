@@ -1,9 +1,9 @@
-# Auto Ripple Server Installer [![made-with-bash](https://img.shields.io/badge/Made%20with-Bash-1f425f.svg)](https://www.gnu.org/software/bash/)  [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/Uniminin/) 
+# <a href=https://ripple.moe>Ripple</a> Stack Installation Helper [![made-with-bash](https://img.shields.io/badge/Made%20with-Bash-1f425f.svg)](https://www.gnu.org/software/bash/)  [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/Uniminin/) 
 
 
 <b>**THIS SCRIPT IS NOT FOR LOCAL PC (localhost)**</b><br>
-Github: https://github.com/osuripple |
-Origin: https://zxq.co/ripple
+Github: https://github.com/Uniminin/Ripple-Auto-Installer |
+Origin: https://zxq.co/Uniminin/Ripple-Auto-Installer
 
 <p align="center">
   <img src="https://github.com/Uniminin/Ripple-Auto-Installer/blob/master/X/ripple.svg"/>
@@ -26,7 +26,7 @@ $ ./ripple.sh
 ```
 ### After Installation Steps
 * Certificate  
-Edit <a href=https://github.com/Uniminin/Ripple-Auto-Installer/blob/master/Main/openssl.cnf>open</a> and run <a href=https://github.com/Uniminin/Ripple-Auto-Installer/blob/master/Main/gencert.sh>gencert.sh</a> to generate certificates. Use `cert.pem` and `key.pem` in your nginx configuration and `cert.pem` in your switcher.  
+Edit <a href=https://github.com/Uniminin/Ripple-Auto-Installer/blob/master/Main/openssl.cnf>openssl.cnf</a> and run <a href=https://github.com/Uniminin/Ripple-Auto-Installer/blob/master/Main/gencert.sh>gencert.sh</a> to generate certificates. Use `cert.pem` and `key.pem` in your nginx configuration and `cert.pem` in your switcher.  
 Use this on your site:
 ```
 git clone https://github.com/Neilpang/acme.sh.git
