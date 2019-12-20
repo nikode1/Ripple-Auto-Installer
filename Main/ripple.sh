@@ -114,16 +114,19 @@ while [ $# -ge 1 ]; do case $1 in
         shift 
     ;;
     --help)
-        printf '%s\n' "ripple.sh --help to View Help"
-	printf '%s\n' "ripple.sh --all To Setup Entire Ripple Stack!
-	printf '%s\n' "ripple.sh --dependencies to Install all the necessary dependencies required for Ripple Stack."
-	printf '%s\n' "ripple.sh --mysql to Manually Setup MySQL DB with dependencies.
-	printf '%s\n' "ripple.sh --peppy to Clone and Setup peppy with dependencies.
-	printf '%s\n' "ripple.sh --lets to Clone and Setup lets with dependencies.
-	printf '%s\n' "ripple.sh --hanayo to Clone and Setup hanayo with dependencies.
-	printf '%s\n' "ripple.sh --rippleapi to Clone and Setup rippleapi with dependencies.
-	printf '%s\n' "ripple.sh --avatarserver to Clone and Setup avatarserver with dependencies.
-	printf '%s\n' "ripple.sh --oldfrontend to Clone and Setup oldfrontend with dependencies.
+        printf '%s\n' \
+		"Usage: script --[argument]" \
+		"" \
+		"ripple.sh --help to View Help" \
+		"ripple.sh --all To Setup Entire Ripple Stack! \ 
+		"ripple.sh --dependencies to Install all the necessary dependencies required for Ripple Stack." \
+		"ripple.sh --mysql to Manually Setup MySQL DB with dependencies. \
+		"ripple.sh --peppy to Clone and Setup peppy with dependencies. \
+		"ripple.sh --lets to Clone and Setup lets with dependencies. \
+		"ripple.sh --hanayo to Clone and Setup hanayo with dependencies. \
+		"ripple.sh --rippleapi to Clone and Setup rippleapi with dependencies. \
+	        "ripple.sh --avatarserver to Clone and Setup avatarserver with dependencies. \
+		"ripple.sh --oldfrontend to Clone and Setup oldfrontend with dependencies. 
 	shift
     ;;
     --dependencies)
@@ -131,9 +134,9 @@ while [ $# -ge 1 ]; do case $1 in
 	shift
     ;;
     --mysql)
-    	dependencies
-	main_dir
-    	mysql_database
+    	dependencies 
+	main_dir 
+	mysql_database
 	shift
     ;;
     --peppy)
