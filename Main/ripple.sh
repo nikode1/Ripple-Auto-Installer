@@ -21,7 +21,7 @@ dependencies() {
 
 main_dir() {
 	# Createing Master Folder (where all repo's will be cloned)
-        printf "Creating Master Directory:/home/RIPPLE"
+    printf "Creating Master Directory:/home/RIPPLE"
 	cd /home || exit ; sudo mkdir RIPPLE ; cd RIPPLE || exit
 }
 
