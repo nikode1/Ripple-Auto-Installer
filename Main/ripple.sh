@@ -3,14 +3,20 @@
 
 # Install necessary dependencies required for lets, pep.py, hanayo, go, old-frontend, mysql. (Used APT)
 dependencies() {
-	printf "Starting To Install Required/Necessary Dependencies [<>]" ; sleep 2
-	sudo apt-get install gcc g++ build-essential git tmux nginx wget mysql-server redis-server libmariadbclient-dev libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev -y
-	sudo apt-get install nginx php-fpm composer php7.0-mbstring php7.0-curl php-mysql vsftpd luajit -y
-	sudo apt-get install checkinstall golang-go cython -y ; cd /usr/src || exit ; sudo wget https://www.python.org/ftp/python/3.6.8/Python-3.6.8.tgz
-	sudo tar xzf Python-3.6.8.tgz ; cd Python-3.6.8 || exit
-	sudo ./configure --enable-optimizations ; sudo make altinstall ; sudo apt-get install python3-pip -y
- 	sudo apt-get update ; sudo apt-get upgrade -y
-	printf "Done Installing all the necessary Dependencies!" ; sleep 1
+	if command -v apt 2>/dev/null; then
+   		printf "Starting To Install Required/Necessary Dependencies [<>]" ; sleep 2
+		sudo apt-get install gcc g++ build-essential git tmux nginx wget mysql-server redis-server libmariadbclient-dev libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev -y
+		sudo apt-get install nginx php-fpm composer php7.0-mbstring php7.0-curl php-mysql vsftpd luajit -y
+		sudo apt-get install checkinstall golang-go cython -y ; cd /usr/src || exit ; sudo wget https://www.python.org/ftp/python/3.6.8/Python-3.6.8.tgz
+		sudo tar xzf Python-3.6.8.tgz ; cd Python-3.6.8 || exit
+		sudo ./configure --enable-optimizations ; sudo make altinstall ; sudo apt-get install python3-pip -y
+		sudo apt-get update ; sudo apt-get upgrade -y
+		printf "Done Installing all the necessary Dependencies!" ; sleep 1
+	elif ! command -v apt 2>/dev/null; then
+    		die "apt is not executable on this system"
+	else
+    		die 255 "Unexpected"
+	fi
 }
 
 main_dir() {
