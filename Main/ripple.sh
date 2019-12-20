@@ -12,10 +12,11 @@ dependencies() {
 		sudo ./configure --enable-optimizations ; sudo make altinstall ; sudo apt-get install python3-pip -y
 		sudo apt-get update ; sudo apt-get upgrade -y
 		printf "Done Installing all the necessary Dependencies!" ; sleep 1
+		
 	elif ! command -v apt >/dev/null; then
-    		die "apt is not executable on this system"
+    	die "apt is not executable on this system"
 	else
-    		die 255 "Unexpected"
+    	die 255 "Unexpected"
 	fi
 }
 
