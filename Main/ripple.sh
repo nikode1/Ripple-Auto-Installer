@@ -139,53 +139,53 @@ while [ $# -ge 1 ]; do case $1 in
 		"RAI Repository URL: <https://github.com/light-ripple/Ripple-Auto-Installer/> " \
 		"GNU AGPLv3 Licence: <https://www.gnu.org/licenses/agpl-3.0.en.html/>" \
 		"General help using GNU software: <https://www.gnu.org/gethelp/>" 
-	shift
+		shift
     ;;
     --dependencies)
     	dependencies
-	shift
+		shift
     ;;
     --mysql)
     	dependencies 
-	main_dir 
-	mysql_database
-	shift
+		main_dir 
+		mysql_database
+		shift
     ;;
     --peppy)
     	dependencies
-	main_dir
+		main_dir
     	peppy
-	shift
+		shift
     ;;
     --lets)
     	dependencies
-	main_dir
+		main_dir
     	lets
-	shift
+		shift
     ;;
     --avatarserver)
     	dependencies
-	main_dir
+		main_dir
     	avatar_server
-	shift
+		shift
     ;;
     --hanayo)
     	dependencies
-	main_dir
+		main_dir
     	hanayo
-	shift
+		shift
     ;;
     --rippleapi)
     	dependencies
-	main_dir
+		main_dir
     	rippleapi
-	shift
+		shift
     ;;
     --oldfrontend)
     	dependencies
-	main_dir
+		main_dir
     	old_frontend
-	shift
+		shift
     ;;
     *)  
      	printf '%s\n' "ERROR! unknown argument | ripple.sh --help to view help."
