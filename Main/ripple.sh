@@ -1,8 +1,6 @@
 #!/bin/sh
 # Created by Angel Uniminin <uniminin@zoho.com> in 2019 under the terms of AGPLv3 (https://www.gnu.org/licenses/agpl-3.0.en.html)
 
-clear ; printf "You Are About to install Ripple Stack on this system. To Cancel press CTRL+C" ; sleep 6 
-
 # Install necessary dependencies required for lets, pep.py, hanayo, go, old-frontend, mysql. (Used APT)
 dependencies() {
 	printf "Starting To Install Required/Necessary Dependencies [<>]" ; sleep 2
