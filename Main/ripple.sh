@@ -115,12 +115,64 @@ while [ $# -ge 1 ]; do case $1 in
     ;;
     --help)
         printf '%s\n' "ripple.sh --help to View Help"
+	printf '%s\n' "ripple.sh --all To Setup Entire Ripple Stack!
+	printf '%s\n' "ripple.sh --dependencies to Install all the necessary dependencies required for Ripple Stack."
+	printf '%s\n' "ripple.sh --mysql to Manually Setup MySQL DB with dependencies.
+	printf '%s\n' "ripple.sh --peppy to Clone and Setup peppy with dependencies.
+	printf '%s\n' "ripple.sh --lets to Clone and Setup lets with dependencies.
+	printf '%s\n' "ripple.sh --hanayo to Clone and Setup hanayo with dependencies.
+	printf '%s\n' "ripple.sh --rippleapi to Clone and Setup rippleapi with dependencies.
+	printf '%s\n' "ripple.sh --avatarserver to Clone and Setup avatarserver with dependencies.
+	printf '%s\n' "ripple.sh --oldfrontend to Clone and Setup oldfrontend with dependencies.
 	shift
     ;;
     --dependencies)
     	dependencies
 	shift
     ;;
-    *)  ERROR! unknown argument | ripple.sh --help to view help.
+    --mysql)
+    	dependencies
+	main_dir
+    	mysql_database
+	shift
+    ;;
+    --peppy)
+    	dependencies
+	main_dir
+    	peppy
+	shift
+    ;;
+    --lets)
+    	dependencies
+	main_dir
+    	lets
+	shift
+    ;;
+    --avatarserver)
+    	dependencies
+	main_dir
+    	avatar_server
+	shift
+    ;;
+    --hanayo)
+    	dependencies
+	main_dir
+    	hanayo
+	shift
+    ;;
+    --rippleapi)
+    	dependencies
+	main_dir
+    	rippleapi
+	shift
+    ;;
+    --oldfrontend)
+    	dependencies
+	main_dir
+    	old_frontend
+	shift
+    ;;
+    *)  
+     	printf '%s\n' "ERROR! unknown argument | ripple.sh --help to view help."
     	shift
 esac; done
