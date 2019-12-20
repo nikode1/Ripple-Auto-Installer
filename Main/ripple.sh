@@ -115,18 +115,24 @@ while [ $# -ge 1 ]; do case $1 in
     ;;
     --help)
         printf '%s\n' \
-		"Usage: script --[argument]" \
+		"Note: script --[argument]" \
 		"" \
-		"ripple.sh --help to View Help" \
-		"ripple.sh --all To Setup Entire Ripple Stack!" \ 
-		"ripple.sh --dependencies to Install all the necessary dependencies required for Ripple Stack." \
-		"ripple.sh --mysql to Manually Setup MySQL DB with dependencies." \
-		"ripple.sh --peppy to Clone and Setup peppy with dependencies." \
-		"ripple.sh --lets to Clone and Setup lets with dependencies." \
-		"ripple.sh --hanayo to Clone and Setup hanayo with dependencies." \
-		"ripple.sh --rippleapi to Clone and Setup rippleapi with dependencies." \
-	        "ripple.sh --avatarserver to Clone and Setup avatarserver with dependencies." \
-		"ripple.sh --oldfrontend to Clone and Setup oldfrontend with dependencies." 
+		"Usage:" \
+		"    --help           Shows the list of all arguments" \
+		"    --all            To Setup Entire Ripple Stack!" \ 
+		"    --dependencies   To Install all the necessary dependencies required for Ripple Stack." \
+		"    --mysql          To Manually Setup MySQL DB with dependencies." \
+		"    --peppy          To Clone and Setup peppy with dependencies." \
+		"    --lets           To Clone and Setup lets with dependencies." \
+		"    --hanayo         To Clone and Setup hanayo with dependencies." \
+		"    --rippleapi      To Clone and Setup rippleapi with dependencies." \
+	        "    --avatarserver   To Clone and Setup avatarserver with dependencies." \
+		"    --oldfrontend    To Clone and Setup oldfrontend with dependencies." \
+		"" \
+		"Report bugs to: uniminin@zoho.com" \
+		"RAI Repository URL: <https://github.com/light-ripple/Ripple-Auto-Installer/> " \
+		"GNU AGPLv3 Licence: <https://www.gnu.org/licenses/agpl-3.0.en.html/>" \
+		"General help using GNU software: <https://www.gnu.org/gethelp/>" 
 	shift
     ;;
     --dependencies)
