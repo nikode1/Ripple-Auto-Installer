@@ -119,7 +119,7 @@ while [ $# -ge 1 ]; do case $1 in
 		"" \
 		"Usage:" \
 		"    --help           Shows the list of all arguments" \
-		"    --all            To Setup Entire Ripple Stack!" \ 
+		"    --all            To Setup Entire Ripple Stack!" \
 		"    --dependencies   To Install all the necessary dependencies required for Ripple Stack." \
 		"    --mysql          To Manually Setup MySQL DB with dependencies." \
 		"    --peppy          To Clone and Setup peppy with dependencies." \
