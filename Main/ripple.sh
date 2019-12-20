@@ -118,15 +118,15 @@ while [ $# -ge 1 ]; do case $1 in
 		"Usage: script --[argument]" \
 		"" \
 		"ripple.sh --help to View Help" \
-		"ripple.sh --all To Setup Entire Ripple Stack! \ 
+		"ripple.sh --all To Setup Entire Ripple Stack!" \ 
 		"ripple.sh --dependencies to Install all the necessary dependencies required for Ripple Stack." \
-		"ripple.sh --mysql to Manually Setup MySQL DB with dependencies. \
-		"ripple.sh --peppy to Clone and Setup peppy with dependencies. \
-		"ripple.sh --lets to Clone and Setup lets with dependencies. \
-		"ripple.sh --hanayo to Clone and Setup hanayo with dependencies. \
-		"ripple.sh --rippleapi to Clone and Setup rippleapi with dependencies. \
-	        "ripple.sh --avatarserver to Clone and Setup avatarserver with dependencies. \
-		"ripple.sh --oldfrontend to Clone and Setup oldfrontend with dependencies. 
+		"ripple.sh --mysql to Manually Setup MySQL DB with dependencies." \
+		"ripple.sh --peppy to Clone and Setup peppy with dependencies." \
+		"ripple.sh --lets to Clone and Setup lets with dependencies." \
+		"ripple.sh --hanayo to Clone and Setup hanayo with dependencies." \
+		"ripple.sh --rippleapi to Clone and Setup rippleapi with dependencies." \
+	        "ripple.sh --avatarserver to Clone and Setup avatarserver with dependencies." \
+		"ripple.sh --oldfrontend to Clone and Setup oldfrontend with dependencies." 
 	shift
     ;;
     --dependencies)
