@@ -1,6 +1,5 @@
 #!/bin/sh
-# RIPPLE STACK INSTALLATION HELPER SCRIPT BY UNIMININ!
-# COPYRIGHT @UNIMININ 2020 | PERMISSION IS HEREBY GRANTED TO ANY COPYRIGHT HOLDER!
+# Created by Angel Uniminin <uniminin@zoho.com> in 2019 under the terms of AGPLv3 (https://www.gnu.org/licenses/agpl-3.0.en.html)
 
 clear ; printf "You Are About to install Ripple Stack on this system. To Cancel press CTRL+C" ; sleep 6 
 
