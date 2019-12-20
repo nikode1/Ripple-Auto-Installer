@@ -17,7 +17,7 @@ dependencies() {
 
 main_dir() {
 	# Createing Master Folder
-    printf "Creating Master Directory:/home/RIPPLE"
+        printf "Creating Master Directory:/home/RIPPLE"
 	cd /home || exit ; sudo mkdir RIPPLE ; cd RIPPLE || exit
 }
 
@@ -93,16 +93,7 @@ finishing() {
 }
 
 run() {
-	dependencies
-	mysql_database
-	main_dir
-	peppy
-	lets
-	avatar_server
-	hanayo
-	rippleapi
-	old_frontend
-	finishing
+	dependencies ; mysql_database ; main_dir ; peppy ; lets ; avatar_server ; hanayo ; rippleapi ; old_frontend ; finishing
 }
 # Start the whole process
 run
