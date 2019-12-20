@@ -114,7 +114,13 @@ while [ $# -ge 1 ]; do case $1 in
         shift 
     ;;
     --help)
-        printf '%s\n' "help here"
+        printf '%s\n' "ripple.sh --help to View Help"
+	shift
     ;;
-    *) error here, unknown argument
+    --dependencies)
+    	dependencies
+	shift
+    ;;
+    *)  ERROR! unknown argument | ripple.sh --help to view help.
+    	shift
 esac; done
