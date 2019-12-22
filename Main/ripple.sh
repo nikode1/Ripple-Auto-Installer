@@ -12,7 +12,6 @@ dependencies() {
 		sudo ./configure --enable-optimizations ; sudo make altinstall ; sudo apt-get install python3-pip -y
 		sudo apt-get update ; sudo apt-get upgrade -y
 		printf "Done Installing all the necessary Dependencies!" ; sleep 1
-		
 	elif ! command -v apt >/dev/null; then
     	die "apt is not executable on this system"
 	else
@@ -118,11 +117,11 @@ while [ $# -ge 1 ]; do case $1 in
         rippleapi
         old_frontend
         finishing
-        shift 
+        shift
     ;;
     --help)
         printf '%s\n' \
-		"Note: script --[argument]" \
+		"Note:sudo script --[argument]" \
 		"" \
 		"Usage:" \
 		"    --help           Shows the list of all arguments" \
@@ -139,7 +138,7 @@ while [ $# -ge 1 ]; do case $1 in
 		"Report bugs to: uniminin@zoho.com" \
 		"RAI Repository URL: <https://github.com/light-ripple/Ripple-Auto-Installer/> " \
 		"GNU AGPLv3 Licence: <https://www.gnu.org/licenses/agpl-3.0.en.html/>" \
-		"General help using GNU software: <https://www.gnu.org/gethelp/>" 
+		"General help using GNU software: <https://www.gnu.org/gethelp/>"
 	shift
     ;;
     --dependencies)
@@ -147,8 +146,8 @@ while [ $# -ge 1 ]; do case $1 in
 	shift
     ;;
     --mysql)
-    	dependencies 
-	main_dir 
+    	dependencies
+	main_dir
 	mysql_database
 	shift
     ;;
@@ -188,7 +187,7 @@ while [ $# -ge 1 ]; do case $1 in
     	old_frontend
 	shift
     ;;
-    *)  
+    *)
      	printf '%s\n' "ERROR! unknown argument | ripple.sh --help to view help."
     	shift
 esac; done
