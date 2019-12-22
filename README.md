@@ -21,8 +21,9 @@
 ### Running the Script (Instructions)
 ```bash
 $ wget https://raw.githubusercontent.com/Uniminin/Ripple-Auto-Installer/master/Main/ripple.sh
-$ chmod +x ripple.sh ; ./ripple.sh --help
+$ chmod +x ripple.sh ; sudo ./ripple.sh --help
 ```
+Note: use sudo. for example: sudo ripple.sh --peppy
 
 ### After Installation Steps
 * Certificate  
